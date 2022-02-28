@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:job_finder/home_screen/home_screen.dart';
+import 'package:job_finder/splash_screen/splash_screen.dart';
 
 import '../../constant.dart';
 import '../../size_config.dart';
@@ -53,7 +55,10 @@ class SplashContent extends StatelessWidget {
                   width: double.infinity - getProportionateScreenWidth((16)),
                   height: getProportionateScreenHeight(54),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed(HomeScreen.nameRoute);
+                    },
                     child: Text(
                       "Get Started",
                       style: TextStyle(fontSize: 20),

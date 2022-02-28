@@ -18,7 +18,7 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
-        const SystemUiOverlayStyle(statusBarColor: kPrimaryLight));
+        const SystemUiOverlayStyle(statusBarColor: kPrimary));
     return SafeArea(
         child: SizedBox(
       width: double.infinity,

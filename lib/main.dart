@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_finder/home_screen/home_screen.dart';
 import 'package:job_finder/splash_screen/splash_screen.dart';
 
 void main() {
@@ -26,6 +27,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: SplashScreen(),
+      initialRoute: SplashScreen.nameRoute,
+      routes: {
+        SplashScreen.nameRoute: (context) => SplashScreen(),
+        HomeScreen.nameRoute: (context) => HomeScreen()
+      },
     );
   }
 }
